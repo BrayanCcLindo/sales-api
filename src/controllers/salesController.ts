@@ -14,7 +14,6 @@ export class SalesController {
       Logger.info('Recibida solicitud de análisis de ventas');
       const analysis = await this.salesService.analyzeSales();
 
-      // Log results to console as required
       console.log('\n===== SALES ANALYSIS RESULTS =====');
       console.log('\n1. Total sales for the last 30 days:');
       console.log(`   Total amount: $${analysis.totalSales.toFixed(2)}`);
